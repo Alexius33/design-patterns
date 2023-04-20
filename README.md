@@ -4,6 +4,13 @@
 ## Showcases for design patterns implemented in Java
 ### Includes:
 
+- Behavioural patterns:
+  - Chain of Responsibility pattern
+  - Command pattern
+  - Mediator pattern
+  - Observer pattern
+  - State pattern
+  - Template method pattern
 - Creational patterns:
     - Factory method pattern
     - Singleton pattern
@@ -13,13 +20,6 @@
     - Decorator pattern
     - Facade pattern
     - Proxy pattern
-- Behavioural patterns:
-    - Chain of Responsibility pattern
-    - Command pattern
-    - Mediator pattern
-    - Observer pattern
-    - State pattern
-    - Template method pattern
 
 ---
 ## License

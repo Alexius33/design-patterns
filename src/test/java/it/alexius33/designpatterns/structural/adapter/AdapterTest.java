@@ -1,12 +1,14 @@
-package it.alexius33.designpatterns.structural.adapter.example;
+package it.alexius33.designpatterns.structural.adapter;
 
 import it.alexius33.designpatterns.structural.adapter.model.WebAdapter;
 import it.alexius33.designpatterns.structural.adapter.model.WebClient;
 import it.alexius33.designpatterns.structural.adapter.thirdparty.WebService;
+import org.junit.jupiter.api.Test;
 
-public class Main {
+class AdapterTest {
 
-    public static void main(String[] args) {
+    @Test
+    void test() {
         final WebService webService = new WebService("https://somehost.com/");
 
         final WebAdapter webAdapter = new WebAdapter();

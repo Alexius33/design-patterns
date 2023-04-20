@@ -36,7 +36,7 @@ public class BankService {
         final IAccount fromAccount = this.bankAccounts.get(from);
         final IAccount toAccount = this.bankAccounts.get(to);
         fromAccount.withdraw(amount);
-        toAccount.transfer(amount);
+        toAccount.deposit(amount);
     }
 
     public BigDecimal getBalance(int account) {

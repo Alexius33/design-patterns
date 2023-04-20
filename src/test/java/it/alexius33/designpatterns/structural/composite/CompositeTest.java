@@ -1,11 +1,11 @@
-package it.alexius33.designpatterns.structural.composite.example;
+package it.alexius33.designpatterns.structural.composite;
 
-import it.alexius33.designpatterns.structural.composite.Housing;
-import it.alexius33.designpatterns.structural.composite.Room;
+import org.junit.jupiter.api.Test;
 
-public class Main {
+class CompositeTest {
 
-    public static void main(String[] args) {
+    @Test
+    void test() {
         final Housing building = new Housing("123 Street");
         final Housing floor1 = new Housing("123 Street - First floor");
         final int firstFloor = building.addStructure(floor1);

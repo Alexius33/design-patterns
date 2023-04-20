@@ -1,15 +1,17 @@
-package it.alexius33.designpatterns.structural.facade.example;
+package it.alexius33.designpatterns.structural.facade;
 
-import it.alexius33.designpatterns.structural.facade.BankService;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
 
 import static it.alexius33.designpatterns.structural.facade.model.AccountType.INVESTMENT;
 import static it.alexius33.designpatterns.structural.facade.model.AccountType.SAVING;
 
-public class Main {
+class FacadeTest {
 
-    public static void main(String[] args) {
+    @Test
+    void test() {
         //acts as a facade for banking operations
         final BankService bankService = new BankService();
 
@@ -29,5 +31,7 @@ public class Main {
         final BigDecimal newInvestmentBalance = bankService.getBalance(myInvestment);
         System.out.println("New investment balance: " + newInvestmentBalance);
 
+        Assertions.assertEquals(new BigDecimal(300), newSavingBalance);
+        Assertions.assertEquals(new BigDecimal(1200), newInvestmentBalance);
     }
 }

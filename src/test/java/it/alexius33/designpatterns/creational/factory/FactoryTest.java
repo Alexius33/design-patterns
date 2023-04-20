@@ -1,16 +1,18 @@
-package it.alexius33.designpatterns.creational.factory.example;
+package it.alexius33.designpatterns.creational.factory;
 
 import it.alexius33.designpatterns.creational.factory.model.Knife;
 import it.alexius33.designpatterns.creational.factory.store.BudgetKnifeStore;
 import it.alexius33.designpatterns.creational.factory.store.KnifeStore;
 import it.alexius33.designpatterns.creational.factory.store.QualityKnifeStore;
+import org.junit.jupiter.api.Test;
 
 import static it.alexius33.designpatterns.creational.factory.model.KnifeType.CHEF;
 import static it.alexius33.designpatterns.creational.factory.model.KnifeType.STEAK;
 
-public class Main {
+class FactoryTest {
 
-    public static void main(String[] args) {
+    @Test
+    void test() {
         System.out.println("Buying from budget store:");
         final KnifeStore budgetKnifeStore = new BudgetKnifeStore();
 
@@ -33,5 +35,4 @@ public class Main {
         final Knife qualityChefKnife = qualityKnifeStore.orderKnife(CHEF);
         qualityChefKnife.cut();
     }
-
 }

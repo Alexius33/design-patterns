@@ -12,14 +12,14 @@
   - State pattern
   - Template method pattern
 - Creational patterns:
-    - Factory method pattern
-    - Singleton pattern
+  - Factory method pattern
+  - Singleton pattern
 - Structural patterns:
-    - Adapter pattern
-    - Composite pattern
-    - Decorator pattern
-    - Facade pattern
-    - Proxy pattern
+  - Adapter pattern
+  - Composite pattern
+  - Decorator pattern
+  - Facade pattern
+  - Proxy pattern
 
 ---
 ## License

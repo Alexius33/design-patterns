@@ -1,6 +1,3 @@
-# This repo is in work in progress
-
----
 ## Showcases for design patterns implemented in Java
 ### Includes:
 
